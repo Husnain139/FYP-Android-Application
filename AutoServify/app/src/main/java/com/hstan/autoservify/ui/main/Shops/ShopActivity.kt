@@ -15,7 +15,7 @@ import com.hstan.autoservify.R
 import com.hstan.autoservify.databinding.ActivityShopBinding
 import com.hstan.autoservify.ui.auth.LoginActivity
 import com.hstan.autoservify.ui.main.Shops.Services.ServicesActivity
-import com.hstan.autoservify.ui.main.Shops.SpareParts.SparePartsActivity
+import com.hstan.autoservify.ui.main.Shops.SpareParts.PartsCraftActivity
 
 class ShopActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -60,11 +60,11 @@ class ShopActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
         // ✅ Spare Parts card and arrow
         binding.sparePartsCard.setOnClickListener {
-            startActivity(Intent(this, SparePartsActivity::class.java))
+            startActivity(Intent(this, PartsCraftActivity::class.java))
         }
 
         binding.SparePartsPage.setOnClickListener {
-            startActivity(Intent(this, SparePartsActivity::class.java))
+            startActivity(Intent(this, PartsCraftActivity::class.java))
         }
     }
 
