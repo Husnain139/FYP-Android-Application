@@ -1,4 +1,4 @@
-package com.hstan.autoservify.ui.ViewHolder
+package com.hstan.autoservify.ui.orders
 
 import androidx.recyclerview.widget.RecyclerView
 import com.hstan.autoservify.databinding.ItemOrderBinding

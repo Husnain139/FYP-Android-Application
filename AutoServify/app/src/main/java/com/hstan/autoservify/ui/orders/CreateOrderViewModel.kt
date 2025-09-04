@@ -1,5 +1,4 @@
-package com.hstan.autoservify.ui.main.Shops.SpareParts
-
+package com.hstan.autoservify.ui.orders
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.hstan.autoservify.model.repositories.AuthRepository

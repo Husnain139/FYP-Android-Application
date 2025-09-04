@@ -1,4 +1,4 @@
-package com.hstan.autoservify.ui.Adapters
+package com.hstan.autoservify.ui.orders
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,6 @@ import com.bumptech.glide.Glide
 import com.hstan.autoservify.R
 import com.hstan.autoservify.databinding.ItemOrderBinding
 import com.hstan.autoservify.ui.Order
-import com.hstan.autoservify.ui.ViewHolder.OrderViewHolder
 
 class OrderAdapter(
     private var items: List<Order>,

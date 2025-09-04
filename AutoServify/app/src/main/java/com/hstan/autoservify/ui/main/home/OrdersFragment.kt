@@ -1,4 +1,4 @@
-package com.hstan.autoservify.ui.main.orders
+package com.hstan.autoservify.ui.main.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,14 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.hstan.autoservify.databinding.FragmentOrdersBinding
-import com.hstan.autoservify.ui.Adapters.OrderAdapter
 import com.hstan.autoservify.ui.Order
+import com.hstan.autoservify.ui.orders.OrderAdapter
 import kotlinx.coroutines.launch
 
 class OrdersFragment : Fragment() {
 
     lateinit var binding: FragmentOrdersBinding
-    lateinit var viewModel: OrdersFragmentViewModel
+    lateinit var viewModel: OrderFragmentViewModel
     lateinit var adapter: OrderAdapter
     private val items = ArrayList<Order>()
 
@@ -39,7 +39,7 @@ class OrdersFragment : Fragment() {
         binding.recyclerview.layoutManager = LinearLayoutManager(context)
         binding.recyclerview.adapter = adapter
 
-        viewModel = OrdersFragmentViewModel()
+        viewModel = OrderFragmentViewModel()
 
         lifecycleScope.launch {
             viewModel.failureMessage.collect { msg ->

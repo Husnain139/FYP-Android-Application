@@ -8,8 +8,8 @@ import com.bumptech.glide.Glide
 import com.google.gson.Gson
 import com.hstan.autoservify.databinding.ItemPartscraftBinding
 import com.hstan.autoservify.ui.main.Shops.SpareParts.PartsCraft
-import com.hstan.autoservify.ui.main.Shops.SpareParts.Partscraftdetail
 import com.hstan.autoservify.ui.ViewHolder.PartsCraftViewHolder
+import com.hstan.autoservify.ui.main.Shops.SpareParts.Partscraftdetail
 
 class PartsCraftAdapter(private var items: List<PartsCraft>) : RecyclerView.Adapter<PartsCraftViewHolder>() {
 

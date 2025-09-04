@@ -1,4 +1,4 @@
-package com.hstan.autoservify.ui.main.orders
+package com.hstan.autoservify.ui.main.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -8,7 +8,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.catch
 import kotlinx.coroutines.launch
 
-class OrdersFragmentViewModel : ViewModel() {
+class OrderFragmentViewModel : ViewModel() {
 
     private val ordersRepository = OrderRepository()
 
